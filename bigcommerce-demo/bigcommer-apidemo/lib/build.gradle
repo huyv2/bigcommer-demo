@@ -11,13 +11,14 @@ plugins {
     id 'java-library'
     id 'org.springframework.boot' version '2.7.5'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id "io.freefair.lombok" version "6.5.1"
 }
 
 group 'bigcommer.apidemo'
-version '1.0'
+version '0.1.0'
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_11
 }
 
 repositories {
@@ -37,7 +38,8 @@ dependencies {
     
     implementation 'org.springframework.boot:spring-boot-starter-web'
     //implementation 'org.springframework.boot:spring-boot-starter-security'
-    compileOnly 'org.projectlombok:lombok:1.18.26'
+    //compileOnly 'org.projectlombok:lombok:1.18.26'
+    compileOnly 'org.projectlombok:lombok'
     //implementation 'org.springdoc:springdoc-openapi-common:1.6.9'
     implementation 'org.springdoc:springdoc-openapi-data-rest:1.6.9'
     implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
