@@ -1,0 +1,12 @@
+server:
+  port: 1904
+springdoc:
+ api-docs:
+  path: /openapi/v3/api-docs
+ swagger-ui:
+  path: /swagger-ui.html
+ packages-to-scan:
+provider:
+ bigcommerce:
+  url: https://api.bigcommerce.com/stores/orghpib8c3/v3/tax/properties
+  token: jt8p4b549dv72jc5scsvjrqk0hye7yf
